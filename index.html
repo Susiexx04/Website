@@ -49,18 +49,27 @@
     background-color: #483D8B;
     color: white;
   padding: 10px 50px;
+
   }
   #Must-Watch {
     background-color: #6A5ACD;
      color: white;
     padding: 10px 50px;
+ display: none; 
   }
   #Link {
     background-color: #bbb5a7;
+display: none;
   }
-   
-  
-  
+  #Link:target { 
+  display: block; 
+} 
+  #PopularShows:target { 
+  display: block; 
+} 
+ #Must-Watch:target { 
+  display: block; 
+}   
   </style>
 </head>
   <div class="header">
@@ -68,12 +77,28 @@
   <p>A website created by Susanna.</p>
 </div>
  <div class="navbar">
-   <a href="#PopularShows">Popular Shows</a>
-<a href="#Must-Watch"> Must-Watch</a>
+<a href="#PopularShows">Popular Shows</a>
+<a href="#Must-Watch" > Must-Watch</a>
 <a href="#Link">Link</a>
   </div> 
 
- 
+ <div id="HomeLink">
+   <p>
+     Welcome to K-drama Web sitte.
+     This site shows popular korian drama. To view more details, please click on below links.
+     <ul>
+     <li>
+       <a href="#PopularShows">Popular Shows</a>
+     </li>
+       <li>
+  <a href="#Must-Watch" > Must-Watch</a>
+     </li>
+       <li>
+     <a href="#Link">Link</a>
+     </li>
+    </ul>
+   </p>
+</div>
 <div id="PopularShows">
   <h3>
     Here are some Popular K-dramas of 2023:</h3><br>
@@ -130,7 +155,7 @@
       <br>
   </p>
 </div>
-<div id="Must-Watch">
+  <div id="Must-Watch" >
   
    <h3>Here are some must-watch kdramas I recommend:<br></h3> 
   <p>
@@ -205,12 +230,15 @@
          alt="m.media-amazon.com" width="200" height="280"><br>
     <br>
   </p>
+    <p>
+      <a href="#HomeLink">Home</a>
+    </p>
 </div>
-<div id="Link">
+
+<div id="Link" style="display:none" class="myDiv">
+  
 </div>
  
-
-
 </body>
    </html>
 </html>
