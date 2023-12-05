@@ -49,17 +49,12 @@
   box-sizing: border-box;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-}
 
 /* Clearfix (clear floats) */
 .row::after {
   content: "";
   clear: both;
-  display: table;
+  display: flex;
 }
   
 #PopularShows {
@@ -127,63 +122,57 @@ display: none;
 
 <div id="PopularShows">
   <h3> Here are some Popular K-dramas of 2023:</h3><br>
-
-   <div class="row">
-  <div class="column">
+<div>
     <p>1. Dr. Romantic 3 <br></p>
     <img src="https://asianwiki.com/images/f/fd/Dr_Romantic_3-mp01.jpg" alt="asianwiki.com"
          style="width:400px; height=300px"><br>
-     </div>
+  
 
-    <div class="column">
+
    <p> 2. The Good Bad Mother <br></p>   
     <img src="https://i.mydramalist.com/E5x540_4f.jpg" 
          alt="mydramalist.com" width="300" height="500"> <br>
-      </div>
+ 
 
-    <div class="column">
+
    <p> 3. Taxi Driver 2 <br></p>
     <img src="https://asianwiki.com/images/2/2f/Taxi_Driver-teaser03S02.jpeg"
          alt="asianwiki.com" width="500" height="370"> <br>
-      </div>
+     
     
-     <div class="column">
+   
     <p>4. The Tale of the Nine-Tailed 1938 <br></p>
     <img src="https://m.media-amazon.com/images/S/pv-target-images/9b2d611b7f3451e544489c105591ec9d6a3b412d58f54f11c7100c1f5ed913ef.jpg"
          alt="media-amazon.com" width="400" height="300"> <br>
-       </div>
+       
     
-     <div class="column">
+  
     <p>5. Bloodhounds <br></p>
     <img src="https://asianwiki.com/images/2/2f/Bloodhounds-p1.jpg" 
          alt="asianwiki.com" width="300" height="400"> <br>
-     </div>
+
      
-     <div class="column">
+   
     <p>6. See You in My 19th Life <br></p>
     <img src="https://m.media-amazon.com/images/M/MV5BMGU1MzYzYWEtMDRmOS00ODhmLTg2MDMtZTM5NDk2ZjJlOWVhXkEyXkFqcGdeQXVyMTM1MjI2OTYx._V1_.jpg"
          alt="m-media-amazon.com" width="270" height="400"> <br>
-     </div>
+   
     
-     <div class="column">
+
     <p>7. My Perfect Stranger <br></p>
     <img src="https://miro.medium.com/v2/resize:fit:949/1*Bde6YpaO00YGLPW0hEGGLQ.jpeg"
          alt="miro.medium.com" width="280" height="390"> <br>
-     </div>
-     
-     <div class="column">
+  
+   
     <p>8. The Glory Part 2 <br></p>
     <img src="https://asianwiki.com/images/0/0d/The_Glory_Part_2-mp1.jpeg"
-         alt="asianwiki.com" width="280" height="390"> <br>
-     </div>
-     
-      <div class="column">
+         alt="asianwiki.com" width="280" height="390" style="float:right"> <br>
+    
+
     <p>9. King the Land <br></p>
     <img src="https://i.mydramalist.com/jQyzPw_2f.jpg"
          alt="mydramlist.com" width="270" height="390"> <br>
-     </div>
-     
-    <div class="column">
+   
     <p>10. Celebrity <br></p>
     <img src="https://asianwiki.com/images/6/69/Celebrity_Netflix-p1.jpg"
          alt="asianwiki.com" width="270" height="390"> <br>
@@ -220,51 +209,7 @@ display: none;
     <img src="https://m.media-amazon.com/images/M/MV5BYTk0Nzk5ZWYtYTNlZi00YjBjLWJhYjctMWMwMmYyMDA5ZjJmXkEyXkFqcGdeQXVyNDY5MjMyNTg@._V1_.jpg"
          alt="m-media-amazon.com" width="200" height="280"><br>
     <br>
-    6. While you were Sleeping<br>
-    <br>
-    <img src="https://pictures.betaseries.com/fonds/poster/5e5d8c3120b904d62f1193ee02a8f4e8.jpg"
-         alt="pictures.betaseries.com" width="200" height="280"><br>
-    <br>
-    7. W: Two Worlds<br>
-    <br>
-    <img src="https://content.mbc.co.kr/program/drama/__icsFiles/afieldfile/2016/08/12/300400.jpg"
-         alt="content.mbc.co.kr" width="200" height="280"><br>
-    <br>
-    8. Fight for My Way<br>
-    <br>
-    <img src="https://asianwiki.com/images/b/b9/Fight_for_My_Way-p02.jpg"
-         alt="asianwiki.com" width="200" height="280"><br>
-    <br>
-    9. Weightlifing Fairy Kim Bok Joo<br>
-    <br>
-    <img src="https://i0.wp.com/mozicsillag.cc/img_movie_covers/weightlifting-fairy-kim-bok-joo-2016-online-1-evad_1.jpg"
-         alt="i0.wp.cpm/mozicsillag.cc" width="200" height="280"><br>
-    <br>
-    10. Moon Lovers: Scarlet Heart Ryeo<br>
-    <br>
-    <img src="https://m.media-amazon.com/images/I/71SwLOsqxzL._AC_UF894,1000_QL80_.jpg"
-         alt="m.media-amazon.com" width="200" height="280"><br>
-    <br>
-    11. True Beauty<br>
-    <br>
-    <img src="https://miro.medium.com/v2/resize:fit:507/1*dsf16_zRWeoRgyk-feKbBg@2x.jpeg"
-         alt="miro.medium.com" width="200" height="280"><br>
-    <br>
-    12.Vincenzo<br>
-    <br>
-    <img src="https://m.media-amazon.com/images/M/MV5BYWIwYTg2Y2YtYzEwNy00Y2Y0LWFkZjktNjBlMWZhNDY2NGE0XkEyXkFqcGdeQXVyNDY5MjMyNTg@._V1_FMjpg_UX1000_.jpg"
-         alt="m.media-amazon.com" width="200" height="280"><br>
-    <br>
-    13. Itaewon Class<br>
-    <br>
-    <img src="https://m.media-amazon.com/images/M/MV5BODY1NWE2OTctOTU5MC00NTlmLWI2MzktMmYzMTUzYjk4YjEzXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg"
-         alt="m.media-amazon.com" width="200" height="280"><br>
-    <br>
-    14. Extraordinary You<br>
-    <br>
-    <img src="https://m.media-amazon.com/images/M/MV5BNDc3ODVmZjgtYjIyYy00ZmU5LWJmNjUtYzRhMzM1ZTE5NGNlXkEyXkFqcGdeQXVyNzk0NTA5NQ@@._V1_FMjpg_UX1000_.jpg"
-         alt="m.media-amazon.com" width="200" height="280"><br>
-    <br>
+   
   </p>
     <p>
       <a href="#Home">Home</a>
