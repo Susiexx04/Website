@@ -16,7 +16,7 @@
 .header {
   padding: 80px;
   text-align: center;
-  background: #191970;
+  background: #036666;
   color: white;
 }
 
@@ -44,21 +44,46 @@
   background-color: #ddd;
   color: black;
 }
+/*style the images */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
   
 #PopularShows {
-    background-color: #483D8B;
+    background-color: #248277;
     color: white;
   padding: 10px 50px;
-
+ display: none; 
   }
   #Must-Watch {
-    background-color: #6A5ACD;
+    background-color: #469D89;
      color: white;
     padding: 10px 50px;
  display: none; 
   }
+
+#Home {
+ background-color: #248277;
+  color: white;
+    padding: 10px 50px;
+
+  }
+
   #Link {
-    background-color: #bbb5a7;
+    background-color: #67B99A;
 display: none;
   }
   #Link:target { 
@@ -70,94 +95,105 @@ display: none;
  #Must-Watch:target { 
   display: block; 
 }   
+ #Home:target { 
+  display: block; 
+} 
   </style>
 </head>
+  
   <div class="header">
   <h1>K-drama Website</h1>
   <p>A website created by Susanna.</p>
 </div>
+
  <div class="navbar">
+<a href="#Home">Home Link</a>
 <a href="#PopularShows">Popular Shows</a>
 <a href="#Must-Watch" > Must-Watch</a>
 <a href="#Link">Link</a>
   </div> 
 
- <div id="HomeLink">
-   <p>
-     Welcome to K-drama Web sitte.
-     This site shows popular korian drama. To view more details, please click on below links.
+ <div id="Home">
+   <p> Welcome to the K-drama Web site.
+     This site shows popular Korean dramas.
+      To view more details, please click on below links.
      <ul>
-     <li>
-       <a href="#PopularShows">Popular Shows</a>
-     </li>
-       <li>
-  <a href="#Must-Watch" > Must-Watch</a>
-     </li>
-       <li>
-     <a href="#Link">Link</a>
-     </li>
+     <li><a href="#PopularShows">Popular Shows</a></li>
+       <li><a href="#Must-Watch" > Must-Watch</a></li>
+       <li><a href="#Link">Link</a></li>
     </ul>
    </p>
 </div>
+
 <div id="PopularShows">
-  <h3>
-    Here are some Popular K-dramas of 2023:</h3><br>
-    <p>
-    1. Dr. Romantic 3 <br>
-      <br>
+  <h3> Here are some Popular K-dramas of 2023:</h3><br>
+
+   <div class="row">
+  <div class="column">
+    <p>1. Dr. Romantic 3 <br></p>
     <img src="https://asianwiki.com/images/f/fd/Dr_Romantic_3-mp01.jpg" alt="asianwiki.com"
-         style="width:500px; height=300px"><br>
-      <br>
-    2. The Good Bad Mother <br>
-      <br>
+         style="width:400px; height=300px"><br>
+     </div>
+
+    <div class="column">
+   <p> 2. The Good Bad Mother <br></p>   
     <img src="https://i.mydramalist.com/E5x540_4f.jpg" 
          alt="mydramalist.com" width="300" height="500"> <br>
-      <br>
-    3. Taxi Driver 2 <br>
-      <br>
+      </div>
+
+    <div class="column">
+   <p> 3. Taxi Driver 2 <br></p>
     <img src="https://asianwiki.com/images/2/2f/Taxi_Driver-teaser03S02.jpeg"
          alt="asianwiki.com" width="500" height="370"> <br>
-      <br>
-    4. The Tale of the Nine Tailed 1938 <br>
-      <br>
+      </div>
+    
+     <div class="column">
+    <p>4. The Tale of the Nine-Tailed 1938 <br></p>
     <img src="https://m.media-amazon.com/images/S/pv-target-images/9b2d611b7f3451e544489c105591ec9d6a3b412d58f54f11c7100c1f5ed913ef.jpg"
          alt="media-amazon.com" width="400" height="300"> <br>
-      <br>
-    5. Bloodhounds <br>
-      <br>
+       </div>
+    
+     <div class="column">
+    <p>5. Bloodhounds <br></p>
     <img src="https://asianwiki.com/images/2/2f/Bloodhounds-p1.jpg" 
          alt="asianwiki.com" width="300" height="400"> <br>
-      <br>
-    6. See You in My 19th Life <br>
-      <br>
+     </div>
+     
+     <div class="column">
+    <p>6. See You in My 19th Life <br></p>
     <img src="https://m.media-amazon.com/images/M/MV5BMGU1MzYzYWEtMDRmOS00ODhmLTg2MDMtZTM5NDk2ZjJlOWVhXkEyXkFqcGdeQXVyMTM1MjI2OTYx._V1_.jpg"
          alt="m-media-amazon.com" width="270" height="400"> <br>
-      <br>
-    7. My Perfect Stranger <br>
-      <br>
+     </div>
+    
+     <div class="column">
+    <p>7. My Perfect Stranger <br></p>
     <img src="https://miro.medium.com/v2/resize:fit:949/1*Bde6YpaO00YGLPW0hEGGLQ.jpeg"
          alt="miro.medium.com" width="280" height="390"> <br>
-      <br>
-    8. The Glory Part 2 <br>
-      <br>
+     </div>
+     
+     <div class="column">
+    <p>8. The Glory Part 2 <br></p>
     <img src="https://asianwiki.com/images/0/0d/The_Glory_Part_2-mp1.jpeg"
          alt="asianwiki.com" width="280" height="390"> <br>
-      <br>
-    9. King the Land <br>
-      <br>
+     </div>
+     
+      <div class="column">
+    <p>9. King the Land <br></p>
     <img src="https://i.mydramalist.com/jQyzPw_2f.jpg"
          alt="mydramlist.com" width="270" height="390"> <br>
-      <br>
-    10. Celebrity <br>
-      <br>
+     </div>
+     
+    <div class="column">
+    <p>10. Celebrity <br></p>
     <img src="https://asianwiki.com/images/6/69/Celebrity_Netflix-p1.jpg"
          alt="asianwiki.com" width="270" height="390"> <br>
-      <br>
-  </p>
-</div>
+     </div>
+ <p><a href="#Home">Home</a></p>
+  </div>
+
   <div id="Must-Watch" >
   
-   <h3>Here are some must-watch kdramas I recommend:<br></h3> 
+   <p>Here are my <strong>Top 5 must-watch</strong> kdramas I highly recommend:<br></p> 
   <p>
     1. Alchemy of Souls Season 2<br>
     <br>
@@ -231,14 +267,13 @@ display: none;
     <br>
   </p>
     <p>
-      <a href="#HomeLink">Home</a>
+      <a href="#Home">Home</a>
     </p>
 </div>
-
-<div id="Link" style="display:none" class="myDiv">
-  
-</div>
- 
+     
+     <div id="Link">
+     </div>
+    </div>
 </body>
    </html>
 </html>
